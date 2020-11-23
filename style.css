@@ -1,6 +1,21 @@
 @font-face
-{}
+{
+    'Raleway', sans-serif;
+}
 
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page
+{
+    width: auto;
+}
+
+
+
+/* Suite info mediaqueries
 @media all and (max-device-width: 480px)
 {
-}
+}*/
