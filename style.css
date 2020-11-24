@@ -6,6 +6,7 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 
@@ -14,10 +15,15 @@ body
     width: auto;
 }
 
+a
+{
+    color: black;
+    text-decoration-line: none;
+}
+
 /*HEADER*/
 header
 {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -28,8 +34,8 @@ header
     display: flex;
     width: 100px;
     height: auto;
-    border: 2px black solid;
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 #inscription
@@ -37,9 +43,15 @@ header
     display: flex;
     align-self: center;
     padding-top: 20px;
+    padding-right: 20px;
     margin-left: auto;
-    border: 2px blue solid;
-    
+    color: #0065FC;
+    font-weight: 1000;
+}
+
+#inscription :hover
+{
+    font-size: 105%;
 }
 
 #nav1
@@ -53,7 +65,8 @@ header
 #nav2
 {   
     display: flex;
-    position: absolute; right: 60px;
+    position: absolute; right: 100px
+    
 }
 
 nav ul
@@ -66,7 +79,7 @@ nav ul
 nav li
 {
     list-style-type: none;
-    border: 2px black solid;
+    font-weight: bold;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
@@ -74,6 +87,12 @@ nav li
     
 }
 
+#nav2 li :hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 31px;
+}
 
 /*HEBERGEMENTS*/
 #container img
@@ -89,6 +108,15 @@ aside img
     object-fit: cover;
     height: 150px;
     border-radius: 20px 0 0 20px;
+}
+
+
+/*FOOTER*/
+
+li
+{
+    list-style-type: none;
+    color: black;
 }
 
 /* Suite info mediaqueries
