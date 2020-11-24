@@ -94,7 +94,54 @@ nav li
     padding-top: 31px;
 }
 
+/*RECHERCHE ET FILTRES*/
+#recherche
+{
+    margin-left: 20px;
+}
+
+#recherche>h1
+{
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+
+.bouton
+{
+    display: flex;
+}
+.map
+{
+    display: flex;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #F2F2F2;
+    height: 35px;
+    width: 30px;
+    justify-content: center;
+}
+
+#city
+{
+    height: 30px;
+    border: 2px #F2F2F2 solid;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#search
+{
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: 2px #0065FC solid;
+}
+
 /*HEBERGEMENTS*/
+
 #container img
 {
     object-fit: cover;
