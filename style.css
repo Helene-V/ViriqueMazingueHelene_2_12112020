@@ -1,6 +1,7 @@
 @font-face
 {
-    'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 }
 
 body
@@ -15,7 +16,7 @@ body
     width: auto;
 }
 
-a
+li a
 {
     color: black;
     text-decoration-line: none;
@@ -39,14 +40,19 @@ header
 }
 
 #inscription
-{   
+{
     display: flex;
-    align-self: center;
+    align-items: center;
+}
+
+#inscription a
+{   
     padding-top: 20px;
     padding-right: 20px;
     margin-left: auto;
     color: #0065FC;
     font-weight: 1000;
+    text-decoration-line: none;
 }
 
 #inscription :hover
@@ -94,10 +100,11 @@ nav li
     padding-top: 31px;
 }
 
-/*RECHERCHE ET FILTRES*/
+/*RECHERCHE*/
 #recherche
 {
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #recherche>h1
@@ -113,14 +120,16 @@ nav li
 .map
 {
     display: flex;
+    align-items: center;
     border-radius: 5px 0px 0px 5px;
     background-color: #F2F2F2;
     height: 35px;
     width: 30px;
-    justify-content: center;
+    justify-content:center;
+    align-self: center;
 }
 
-#city
+.city
 {
     height: 30px;
     border: 2px #F2F2F2 solid;
@@ -129,7 +138,7 @@ nav li
     padding-left: 10px;
 }
 
-#search
+.search /*Est-il possible de mettre un :hover à un input ?*/
 {
     height: 35px;
     border-radius: 0 5px 5px 0;
@@ -140,9 +149,49 @@ nav li
     border: 2px #0065FC solid;
 }
 
+/*FILTRES*/
+
+.i_info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid gray; 
+}
+
+.fas.fa-info
+{
+    color: #0065FC;
+}
+
+.info_text
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.info
+{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
 /*HEBERGEMENTS*/
 
-#container img
+#container1
+{   
+    margin-left: 20px;
+    width: 900px;
+    height: auto;
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding : 20px 20px;
+}
+
+#container1 img
 {
     object-fit: cover;
     height: 150px;
@@ -163,7 +212,7 @@ aside img
 li
 {
     list-style-type: none;
-    color: black;
+
 }
 
 /* Suite info mediaqueries

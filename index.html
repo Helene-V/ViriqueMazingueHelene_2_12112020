@@ -34,22 +34,26 @@
                         
                         <div class="bouton">
                             <div class="map"><i class="fas fa-map-marker-alt"></i></div>
-                            <div><input id ="city" type="text" name="texte" value="Marseille, France"></div>    
-                            <div><input id="search" type="button" name="nom" value="Rechercher"></div>
+                            <div><input class="city" type="text" name="texte" value="Marseille, France"></div>    
+                            <div><input class="search" type="button" name="nom" value="Rechercher"></div>
                         </div>
                         
                         <h2>Filtres</h2>
-                        <div><i class="fas fa-money-bill-wave"></i><input type="button" name="nom" value="Economique"></div>
-                        <div><i class="fas fa-child"></i><input type="button" name="nom" value="Familial"></div>
-                        <div><i class="fas fa-heart"></i><input type="button" name="nom" value="Romantique"></div>
-                        <div><i class="fas fa-dog"></i><input type="button" name="nom" value="Animaux autorisés"></div>
+                            <ul>
+                                <li><i class="fas fa-money-bill-wave"></i><a href="filtre_economique">Économique</a></li>
+                                <li><i class="fas fa-child"></i><a href="filtre_famille">Familial</a></li>
+                                <li><i class="fas fa-heart"></i><a href="filtre_romantique">Romantique</a></li>
+                                <li><i class="fas fa-dog"></i><a href="filtre_animaux">Animaux autorisés</a></li>
+                            </ul>
 
-                        <div><i class="fas fa-info"></i></div>
-                        <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
+                            <div class="info">
+                            <div class="i_info"><i class="fas fa-info"></i></div>
+                            <div class="info_text"><span>Plus de 500 logements sont disponibles dans cette ville</span></div>
+                            </div>
                     
             </section>
 
-            <section id="container">
+            <section id="container1">
                 <h1 id="ancre1">Hébergements à Marseille</h1>
                     <article>
                         <img src="hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière">
