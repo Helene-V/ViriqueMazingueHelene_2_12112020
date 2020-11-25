@@ -10,6 +10,10 @@ body
     margin: 0;
 }
 
+span
+{
+    font-weight: bold;
+}
 
 #bloc_page
 {
@@ -165,6 +169,7 @@ nav li
 .fas.fa-info
 {
     color: #0065FC;
+    font-size: small;
 }
 
 .info_text
@@ -179,6 +184,38 @@ nav li
     align-items: center;
     margin-left: 0;
 }
+
+.icone
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+}
+
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+.clic
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-right: 30px;
+    border: 2px solid #DEEBFF;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px 50px 50px 50px;
+}
+
 /*HEBERGEMENTS*/
 
 #container1
@@ -194,8 +231,20 @@ nav li
 #container1 img
 {
     object-fit: cover;
+    width: 250px;
     height: 150px;
     border-radius: 20px 20px 0 0;
+}
+
+article
+{
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid white;
 }
 
 aside img
