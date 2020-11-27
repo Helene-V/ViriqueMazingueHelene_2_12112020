@@ -10,12 +10,6 @@ body
     margin: 0;
 }
 
-h4
-{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
 span
 {
     font-weight: bold;
@@ -24,6 +18,15 @@ span
 #bloc_page
 {
     width: auto;
+}
+
+#container1000001 /*un peu d'humour dans ce monde de flexbox*/
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
 }
 
 li a
@@ -304,6 +307,13 @@ nav li
     text-shadow: 2px 2px 15px white;
 }
 /*LES PLUS POPULAIRES*/
+h4
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
 
 #titre
 {
@@ -312,18 +322,13 @@ nav li
     justify-content: space-between;
     align-items: baseline;
     margin-top: 20px;
-    margin-bottom: 10px;
-   padding-right: 40px;
+    padding-right: 40px;
 }
 
 aside
 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    position: relative;
-    left: 65%;
-    top :-790px;     /*verif systeme z index, ou container dans container?*/
     width: 450px;
     height: auto;
     background-color: #F2F2F2;
@@ -385,7 +390,7 @@ h5
     flex-wrap: nowrap;
     width: 100%;
     height: 500px;
-    margin: 0;
+    margin-top: 50px;
 }
 
 .container2 img
@@ -424,6 +429,7 @@ h5
     display: flex;
     justify-content: space-around;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .bloc2
@@ -461,19 +467,19 @@ li
 
 }
 
-footer
+
+.container3
 {
+    margin-top: auto;
     width: 100%;
     height: auto;
     background-color: #0065FC;
 }
 
-.container3
+.pied
 {
     display: flex;
-    margin: 40px 40px 40px 40px;
 }
-
 /* Suite info mediaqueries
 @media all and (max-device-width: 480px)
 {
