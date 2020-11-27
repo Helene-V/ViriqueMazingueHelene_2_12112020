@@ -402,25 +402,23 @@ h5
 
 .carte
 {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
     height: auto;
     margin-bottom: 40px;
-    padding: 2px 2px 10px 2px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    border: 5px solid white;
     box-shadow: 6px 6px 25px #C0C0C0;
 }
 
 .carte_large
 {
-    width: 300px;
+    width: 320px;
     height: auto;
     margin-bottom: 40px;
-    padding: 2px 2px 10px 2px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    border: 5px solid white;
     box-shadow: 6px 6px 25px #C0C0C0;
 }
 
@@ -428,8 +426,6 @@ h5
 {
     display: flex;
     justify-content: space-around;
-    height: auto;
-    margin-bottom: 50px;
 }
 
 .bloc2
@@ -438,16 +434,10 @@ h5
     flex-direction: column;
 }
 
-.carte
-{
-    display: flex;
-    flex-direction: column;
-}
-
 .carte img
 {   
     object-fit: cover;
-    width: 250px;
+    width: 320px;
     height: 150px;
     border-radius: 20px 20px 0 0;
 }
@@ -455,30 +445,45 @@ h5
 .carte_large img
 {   
     object-fit: cover;
-    width: 300px;
+    width: 320px;
     height: 400px;
     border-radius: 20px 20px 0 0;
 }
+
+h6
+{
+    padding-left: 5px;
+    margin: 20px; 
+    font-size: 1em;
+    font-weight: bold;
+}
+
 /*FOOTER*/
 
-li
+footer ul li
 {
     list-style-type: none;
-
+    line-height: 2em;
 }
 
 
-.container3
+.pied    
 {
-    margin-top: auto;
+    background-color: #DEEBFF;
+    display: flex;
+    margin-top: 200px;
+    padding : 20px 20px 20px 20px;
     width: 100%;
     height: auto;
-    background-color: #0065FC;
 }
 
-.pied
+.zone
 {
+    width: auto;
+    height: auto;
     display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
 }
 /* Suite info mediaqueries
 @media all and (max-device-width: 480px)
