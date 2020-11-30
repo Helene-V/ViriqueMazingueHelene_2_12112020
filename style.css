@@ -20,7 +20,7 @@ span
     width: auto;
 }
 
-#container1000001 /*un peu d'humour dans ce monde de flexbox*/
+#container_central /*Hébergements + populaires*/
 {
     display: flex;
     flex-flow: row nowrap;
@@ -160,7 +160,7 @@ nav li
     padding-left: 10px;
 }
 
-.search /*Est-il possible de mettre un :hover à un input ?*/
+.search
 {
     height: 35px;
     border-radius: 0 5px 5px 0;
@@ -169,6 +169,11 @@ nav li
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     border: 2px #0065FC solid;
+}
+
+.search:hover
+{
+    box-shadow: 10px 10px 10px gray;
 }
 
 /*FILTRES*/
@@ -181,7 +186,7 @@ nav li
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 2px solid #C0C0C0; 
+    border: 2px solid #F2F2F2; 
 }
 
 .fas.fa-info
@@ -204,24 +209,41 @@ nav li
 }
 
 .icone
+{   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    background: bleu;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: #F2F2F2;  /*Pas certaine que c'est le style demandé de savoir créer*/
+    border-radius: 50px;
+    padding-right: 10px;
+}
+
+.icone i
 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #DEEBFF;
+    justify-content: center;
     background-color: #DEEBFF;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #0065FC;
+    font-size: large;
 }
+
+
 
 #filtrage
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
+    padding-left: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -236,6 +258,11 @@ nav li
     border: 2px solid #DEEBFF;
     margin-right: 20px;
     border-radius: 50px 50px 50px 50px;
+}
+
+.icone:hover
+{
+    box-shadow: 10px 10px 10px gray;
 }
 
 /*HEBERGEMENTS*/
@@ -255,8 +282,8 @@ nav li
     object-fit: cover;
     width: 250px;
     height: 150px;
-    border-radius: 20px 20px 0 0; /*Voir si ma méthode est bonne pour le bord interne de l'image*/
     border-radius: 16px 16px 0 0;
+    
 }
 
 #container1 > h2
@@ -306,6 +333,11 @@ nav li
     color: #0065FC;
     text-shadow: 2px 2px 15px white;
 }
+
+.article_1:hover
+{
+    box-shadow: 10px 10px 10px white;
+}
 /*LES PLUS POPULAIRES*/
 h4
 {
@@ -334,7 +366,6 @@ aside
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-left: 40px;
-    
 }
 
 aside img
@@ -342,7 +373,6 @@ aside img
     object-fit: cover;
     height: 180px;
     width: 180px;
-    border-radius: 20px 0 0 20px;
     border-radius: 16px 0 0 16px;
 }
 
@@ -371,6 +401,11 @@ h3, p
 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.article_2:hover
+{
+    box-shadow: 10px 10px 10px white;
 }
 
 
@@ -412,6 +447,11 @@ h5
     box-shadow: 6px 6px 25px #C0C0C0;
 }
 
+.carte:hover
+{
+    box-shadow: 10px 10px 10px white;
+}
+
 .carte_large
 {
     width: 320px;
@@ -420,6 +460,11 @@ h5
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 6px 6px 25px #C0C0C0;
+}
+
+.carte_large:hover
+{
+    box-shadow: 10px 10px 10px white;
 }
 
 .bloc
@@ -469,7 +514,7 @@ footer ul li
 
 .pied    
 {
-    background-color: #DEEBFF;
+    background-color: #F2F2F2;
     display: flex;
     margin-top: 200px;
     padding : 20px 20px 20px 20px;
@@ -483,7 +528,7 @@ footer ul li
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding-right: 100px;
+    padding-right: 17%;
 }
 /* Suite info mediaqueries
 @media all and (max-device-width: 480px)
