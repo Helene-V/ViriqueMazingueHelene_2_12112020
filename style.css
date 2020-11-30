@@ -42,7 +42,7 @@ li a
 
 .star_grey
 {
-    color: #C0C0C0;
+    color: #F2F2F2;
 }
 /*HEADER*/
 header
@@ -79,7 +79,7 @@ header
 
 #inscription :hover
 {
-    font-size: 105%;
+    transform: scale(1.10);
 }
 
 #nav1
@@ -126,7 +126,7 @@ nav li
 #recherche
 {
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #recherche>h1
@@ -173,7 +173,7 @@ nav li
 
 .search:hover
 {
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 5px 0 10px #0065FC;
 }
 
 /*FILTRES*/
@@ -236,6 +236,13 @@ nav li
     font-size: large;
 }
 
+.icone i:hover
+{
+    transition-property: all;
+    transition-duration: 1s;
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
 
 
 #filtrage
@@ -243,9 +250,9 @@ nav li
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 .clic
 {
@@ -262,7 +269,7 @@ nav li
 
 .icone:hover
 {
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 5px 0 10px #C0C0C0;
 }
 
 /*HEBERGEMENTS*/
@@ -336,7 +343,7 @@ nav li
 
 .article_1:hover
 {
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0 10px 20px white;
 }
 /*LES PLUS POPULAIRES*/
 h4
@@ -405,7 +412,7 @@ h3, p
 
 .article_2:hover
 {
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0 10px 20px white;
 }
 
 
@@ -449,7 +456,7 @@ h5
 
 .carte:hover
 {
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0 10px 20px #C0C0C0;
 }
 
 .carte_large
@@ -464,7 +471,7 @@ h5
 
 .carte_large:hover
 {
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0 10px 20px #C0C0C0;
 }
 
 .bloc
