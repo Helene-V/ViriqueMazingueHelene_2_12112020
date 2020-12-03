@@ -97,7 +97,8 @@ header
 {
 	display: flex;
 	position: absolute;
-right: 100px    }
+	right: 100px
+}
 
 nav ul
 {
@@ -145,18 +146,19 @@ nav li
 {
 	display: flex;
 	align-items: center;
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0 0 5px;
 	background-color: #F2F2F2;
 	height: 35px;
 	width: 30px;
+	border: 2px #F2F2F2 solid;
 	justify-content:center;
 	align-self: center;
 }
 
 .city
 {
-	height: 30px;
-	border: 2px #F2F2F2 solid;
+	height: 35px;
+	border: 1px #F2F2F2 solid;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	padding-left: 10px;
@@ -178,6 +180,13 @@ nav li
 	box-shadow: 5px 0 10px #0065FC;
 }
 
+.loupe
+{
+	width: 35px;
+	height: auto;
+	background-color: #0065FC;
+	border-radius: 5px 5px 5px 5px;
+}
 /*FILTRES*/
 .i_info
 {
@@ -544,12 +553,22 @@ footer li:hover
 	padding-right: 17%;
 }
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 375px)
 {
 	/*max-width si l'écran est inférieur ou égal à 1550px = destop first et min-width si l'écran est supérieur ou égal = mobile first*/
 	#bloc_page
 	{
 		width: auto;
 	}
-
+	.search
+	{
+	display: none;
+	}
+	.loupe
+	{
+	width: 35px;
+	height: auto;
+	background-color: #0065FC;
+	border-radius: 5px 5px 5px 5px;
+	}
 }

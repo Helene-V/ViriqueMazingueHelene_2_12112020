@@ -3,28 +3,26 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobile.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 		<title>Reservia</title>
 	</head>
 	<body>
 		<div id="bloc_page">
 			<header>
-				<nav class="nav1">
+				<nav class="nav_1">
 					<!--Menu première partie-->
 					<img id="logo" src="logo/Reservia@3x.png" alt="Logo Rerservia" />
 					<div id="inscription">
 						<a href="page_inscription">S'inscrire</a>
 					</div>
 				</nav>
-				<nav class="nav2">
-					<!--Menu deuxième partie-->
-					<ul>
-						<li class="bordure"><a href="#ancre1">Hébergements</a></li>
-						<li class="bordure"><a href="#ancre2">Activités</a></li>
-					</ul>
+				<nav class="nav_2">
+					<a href="#ancre1" class="bouton_ancre1">Hébergements</a>
+					<a href="#ancre2" class="bouton_ancre2">Activités</a>
 				</nav>
 			</header>
 			<section id="zone_recherche">
@@ -41,11 +39,12 @@
 						<input class="city" type="text" name="texte" value="Marseille, France">
 					</div>
 					<div class="search">
-						<input class="search" type="button" name="nom" value="Rechercher">
+						<button class="loupe" type="button"><i class="fas fa-search"></i></button>
 					</div>
-					<div class="loupe">
-						<input type="image" src="hebergements/4_small/loupe.svg">
+					<div class="search2">
+						<button class="rechercher" type="button">Rechercher</button>
 					</div>
+
 				</div>
 				<div class="boutons_filtres">
 					<!--Zone des filtres-->
