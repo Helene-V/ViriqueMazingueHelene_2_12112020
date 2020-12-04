@@ -572,3 +572,5 @@ footer li:hover
 	border-radius: 5px 5px 5px 5px;
 	}
 }
+
+@media screen and (max-width: 375px)
