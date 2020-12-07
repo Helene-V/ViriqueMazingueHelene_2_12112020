@@ -3,28 +3,27 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobile.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 		<title>Reservia</title>
 	</head>
 	<body>
 		<div id="bloc_page">
 			<header>
-				<nav class="nav1">
+				<nav>
 					<!--Menu première partie-->
 					<img id="logo" src="logo/Reservia@3x.png" alt="Logo Rerservia" />
 					<div id="inscription">
 						<a href="page_inscription">S'inscrire</a>
 					</div>
-				</nav>
-				<nav class="nav2">
-					<!--Menu deuxième partie-->
-					<ul>
-						<li class="bordure"><a href="#ancre1">Hébergements</a></li>
-						<li class="bordure"><a href="#ancre2">Activités</a></li>
-					</ul>
+					<div class="les_ancres">
+						<!--Menu deuxième partie-->
+						<a href="#ancre1" class="bouton_ancre">Hébergements</a>
+						<a href="#ancre2" class="bouton_ancre">Activités</a>
+					</div>
 				</nav>
 			</header>
 			<section id="zone_recherche">
@@ -41,28 +40,31 @@
 						<input class="city" type="text" name="texte" value="Marseille, France">
 					</div>
 					<div class="search">
-						<input class="search" type="button" name="nom" value="Rechercher">
+						<button class="loupe" type="button"><i class="fas fa-search"></i></button>
 					</div>
-					<div class="loupe">
-						<input type="image" src="hebergements/4_small/loupe.svg">
+					<div class="search2">
+						<button class="rechercher" type="button">Rechercher</button>
 					</div>
+
 				</div>
 				<div class="boutons_filtres">
 					<!--Zone des filtres-->
-					<p>
-						<span>Filtres</span>
-					</p>
+					<div class="titre_filtres">
+						Filtres
+					</div>
 					<div class="icone">
 						<i class="fas fa-money-bill-wave"></i>
 						Économique                        
 					</div>
-					<div class="icone">
-						<i class="fas fa-child"></i>
-						Familial                        
-					</div>
-					<div class="icone">
-						<i class="fas fa-heart"></i>
-						Romantique                        
+					<div class="icone_bloc">
+						<div class="icone">
+							<i class="fas fa-child"></i>
+							Familial                        
+						</div>
+						<div class="icone">
+							<i class="fas fa-heart"></i>
+							Romantique                        
+						</div>
 					</div>
 					<div class="icone">
 						<i class="fas fa-dog"></i>
@@ -102,7 +104,7 @@
 								<span class="star_grey"><i class="fas fa-star"></i></span>
 							</div>
 						</article>
-						<article class="article_1">
+						<article class="article_1"><a></a>
 							<img src="hebergements/4_small/port.jpg" alt="Hôtel du port">
 							<h3>Hôtel du port</h3>
 							<p>
@@ -338,6 +340,6 @@
 							</div>
 					</footer>
 				</div>
-			</body> <!--test-->
+			</body>
 		</html>
 
