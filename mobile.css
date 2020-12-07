@@ -41,17 +41,18 @@ a
 {
 	width: 100px;
 	height: auto;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 
 nav
 {
-	width: 95%;
+	width: 100%;
+	height: auto;
 	display: flex;
-	flex-wrap: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 #inscription
@@ -61,7 +62,9 @@ nav
 	justify-content: flex-end;
 	width: 100px;
 	margin-right: 20px;
-
+	margin-top: 20px;
+	margin-bottom: 25px;
+	padding-right: 20px;
 }
 
 #inscription a
@@ -82,16 +85,16 @@ nav
 	height: auto;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
-	font-weight: 500;
+	margin-bottom: 20px;
 }
 
 .bouton_ancre
 {
 	width: 50%;
 	border-bottom: 3px solid #F2F2F2;
-	padding: 2% 12%;
-	margin-bottom: 20px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -99,15 +102,14 @@ a.bouton_ancre:hover
 {
 	color: #0065FC;
 	border-bottom: 3px solid #0065FC;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 h1
 {
-	padding: 0;
+	
 	font-weight: 700;
 	font-size: 1.4em;
-	margin: 0;
 }
 
 #zone_recherche
@@ -119,60 +121,40 @@ h1
 @media only screen and (min-width: 768px){ 
 	/*HEADER*/
 	header{
-	  height: 50px;
+	  height: 5%;
 	  width: 100%;
 	}
-	#zone_recherche
-	{
-		margin-top: 20px;
-	}
-	
+
 	.les_ancres{
 	  width: auto;
 	  position: absolute;
-	  top: 35px;
-	  right: 16%;
+	  right: 12%;
 	}
+	
 	.bouton_ancre{
+
+	  padding-top: 32px;
 	  border-bottom: 0;
-	  margin-left: 20px;
-	  margin-right: 20px;
-	  margin-bottom: 0;
-	  padding: 0;
-	}
-
-	a.bouton_ancre:hover
-	{
-	  color: #0065FC;
-	  border-bottom: 0;
-	  padding-bottom: 0;
-	  font-weight: 600;
-	}
-
-}
-
-@media only screen and (min-width: 1200px){ 
-	/*HEADER ordinateur*/
-	#bloc_page{
-		margin: 20px 20px; 
-	}
-	.les_ancres{
-	right: 17%;
-
-	}
-	.bouton_ancre{
-	  margin-left: 0;
-	  margin-right: 50px;
+	  padding-left: 15px;
+	  padding-right: 15px;
 	}
 
 	a.bouton_ancre:hover
 	{
 	  position: relative;
 	  border-top: 3px solid #0065FC;
-	  font-weight: 0;
-	  margin-left: 0;
-	  margin-right: 50px;
+	  border-bottom: 0;
+	  padding-top: 32px;
+	  padding-bottom: 0;
+	  padding-left: 15px;
+	  padding-right: 15px;
 	}
+
+}
+
+@media only screen and (min-width: 1200px){ 
+	/*HEADER ordinateur*/
+	
 	
 
 	h1{
@@ -181,7 +163,27 @@ h1
 	font-size: 1.2em;
 	margin: 0;
 	}
+
+	#inscription
+	{
+	margin-right: 40px;
+	}
+		.bouton_ancre{
+	  margin-right: 40px;
+	}
+
+		.bouton_ancre{
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+
+		a.bouton_ancre:hover
+	{  padding-left: 15px;
+	  padding-right: 15px;}
+
+
 }
+
 
 .champ_de_recherche
 {
