@@ -128,7 +128,7 @@ h1
 	.les_ancres{
 	  width: auto;
 	  position: absolute;
-	  right: 12%;
+	  right: 13%;
 	}
 	
 	.bouton_ancre{
@@ -460,6 +460,39 @@ i.fas.fa-search
 	margin-top: 10px;
 }
 
+@media only screen and (min-width: 700px) {
+
+.module_1 img
+{
+	object-fit: cover;
+	width: 300px;
+	height: 150px;
+	border-radius: 16px 16px 0 0;
+}
+
+.zone_article_1
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+}
+
+.article_1
+{
+	width: auto;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.notation_1
+{
+	margin-left : 5px;
+	margin-bottom: 5px;
+}
+}
+
 #afficher
 {
 	margin-top: 30px;
@@ -553,6 +586,17 @@ aside p
 	display: flex;
 	flex-flow: column wrap;
 	padding-left: 15px;
+}
+
+@media only screen and (min-width: 638px){
+	.txt_article_2 h3
+	{
+		font-size: 1.5em;
+	}
+	.notation_2
+	{
+		font-size: 1.2em;
+	}
 }
 
 h3, p
@@ -677,8 +721,73 @@ h6
 	font-weight: bold;
 }
 
+@media only screen and (min-width: 700px) {
+	.carte img
+{
+	height: 200px;
+}
 
-/*FOOTER*/
+.carte_large img
+{
+	height: 200px;
+}
+
+@media only screen and (min-width: 992px) {
+	.module_2
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: auto;
+}
+
+.module_2 img
+{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.carte
+{
+	width: 200px; 
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.carte_large
+{
+	width: 200px;
+	height: 450px;
+	margin-bottom: 0;
+}
+
+.bloc_cartes
+{
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.carte img
+{
+	width: 200px;
+	height: 150px;
+}
+
+.carte_large img
+{
+	width: 200px;
+	height: 350px;
+}
+
+.double_carte
+	{
+	justify-content: space-between;
+	}
+
+}
+
 footer
 {
 	background-color: #F2F2F2;
@@ -717,4 +826,3 @@ footer span
 {
 	font-weight: 600;
 }
-
