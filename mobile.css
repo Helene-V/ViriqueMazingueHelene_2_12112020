@@ -570,10 +570,6 @@ aside p
 	.txt_article_2 h3{
 	  font-size: 1.5em;
 	}
-
-	.notation_2{
-	  font-size: 1.2em;
-	}
 }
 
 h3, p
@@ -590,13 +586,75 @@ h3
 
 .notation_2
 {
-	margin-left : 5px;
+
 	margin-top: 35px;
 }
 
 .price
 {
 	font-weight: bold;
+}
+
+@media only screen and (min-width: 992px){	
+	.container{
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+	
+	.module_1{
+		width: 60%;
+		height: auto;
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.txt_article_2 h3{
+		font-size: 1.3em;
+	}
+
+	.notation_2{
+		margin-top: 30px;
+		padding-left: 5px;
+	}
+
+	aside{
+		width: 35%;
+		height: auto;
+		border-radius: 20px;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.article_2{
+		margin-bottom: auto;
+		height: 200px;
+	}
+	
+	.article_2 img{
+		height: auto;
+	}
+
+	.module_1 img{
+		width: 250px;
+		height: 100px;
+	}
+	
+	.zone_article_1{
+	  justify-content: space-around;
+	  width: 100%;
+	  height: auto;
+	}
+
+	.article_1{
+	  margin-bottom: 10px;
+	}
+
+	h3, p{
+	margin-top: 10px;
+	}
+
 }
 
 /*ACTIVITES*/
@@ -695,11 +753,11 @@ h6
 
 @media only screen and (min-width: 700px){
 	.carte img{
-	  height: 200px;
+	  height: 25%;
 	}
 
 	.carte_large img{
-	  height: 200px;
+	  height: 25%;
 	}
 }
 
@@ -719,13 +777,13 @@ h6
 	}
 
 	.carte{
-	  width: 200px; 
+	  width: 210px; 
 	  margin-bottom: 20px;
 	  background-color: white;
 	}
 
 	.carte_large{
-	  width: 200px;
+	  width: 210px;
 	  height: 450px;
 	  margin-bottom: 0;
 	}
@@ -736,12 +794,12 @@ h6
 	}
 
 	.carte img{
-	  width: 200px;
+	  width: 210px;
 	  height: 150px;
 	}
 
 	.carte_large img{
-	  width: 200px;
+	  width: 210px;
 	  height: 350px;
 	}
 
@@ -801,5 +859,11 @@ footer span
 	}
 	.encart{
 	  margin: 2em;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	footer{
+	  justify-content: space-around;
 	}
 }
