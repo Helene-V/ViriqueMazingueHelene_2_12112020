@@ -790,3 +790,16 @@ footer span
 	font-weight: 700;
 	font-size: 1.2em;
 }
+
+@media only screen and (min-width: 768px){
+	footer{
+	  flex-direction: row;
+	  justify-content: flex-start;
+	}
+	footer ul{
+	  padding-left: 0;
+	}
+	.encart{
+	  margin: 2em;
+	}
+}
