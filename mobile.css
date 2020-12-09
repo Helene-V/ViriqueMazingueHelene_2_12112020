@@ -61,10 +61,10 @@ nav
 	align-items: center;
 	justify-content: flex-end;
 	width: 100px;
-	margin-right: 20px;
 	margin-top: 20px;
 	margin-bottom: 25px;
-	padding-right: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 #inscription a
@@ -106,7 +106,6 @@ a.bouton_ancre:hover
 
 h1
 {
-	
 	font-weight: 700;
 	font-size: 1.4em;
 }
@@ -125,7 +124,7 @@ h1
 	}
 
 	.les_ancres{
-	  width: auto;
+	  width: 25%;
 	  position: absolute;
 	  right: 13%;
 	}
@@ -133,8 +132,8 @@ h1
 	.bouton_ancre{
 	  padding-top: 32px;
 	  border-bottom: 0;
-	  padding-left: 15px;
-	  padding-right: 15px;
+	  padding-left: 10%;
+	  padding-right: 10%;
 	}
 
 	a.bouton_ancre:hover
@@ -144,8 +143,8 @@ h1
 	  border-bottom: 0;
 	  padding-top: 32px;
 	  padding-bottom: 0;
-	  padding-left: 15px;
-	  padding-right: 15px;
+	  padding-left: 10%;
+	  padding-right: 10%;
 	}
 }
 
@@ -157,24 +156,6 @@ h1
 	  font-weight: 700;
 	  font-size: 1.2em;
 	  margin: 0;
-	}
-
-	#inscription{
-	  margin-right: 40px;
-	}
-	
-	.bouton_ancre{
-	  margin-right: 40px;
-	}
-
-	.bouton_ancre{
-	  padding-left: 15px;
-	  padding-right: 15px;
-	}
-
-	a.bouton_ancre:hover{
-	  padding-left: 15px;
-	  padding-right: 15px;
 	}
 }
 
@@ -249,7 +230,7 @@ i.fas.fa-search
 	font-size: 1.3em;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 768px){
+@media only screen and (min-width: 300px) and (max-width: 767px){
 	.search2{
 	  display: none;
 	}
