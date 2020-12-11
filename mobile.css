@@ -16,6 +16,14 @@ body
 	box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1410px){
+	#block_page{
+		width: 1400px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
 .star_blue
 {
 	color: #0065FC;
