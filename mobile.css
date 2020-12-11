@@ -507,7 +507,7 @@ i.fas.fa-search
 		background-color: #F2F2F2;
 		border-radius: 20px;
 	}
-		.module_1 img{
+	.module_1 img{
 		width: 250px;
 		height: 100px;
 	}
@@ -551,6 +551,27 @@ i.fas.fa-search
 	#afficher
 	{
 		margin-left: 20px;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	.module_1{
+		margin-left: 35px;
+		margin-right: 5px;
+	}
+
+	.module_1 img{
+		width: 245px;
+		height: 130px;
+	}
+
+	.article_1{
+		margin-bottom: 30px;
+	}
+
+	#afficher{
+	margin-top: 10px;
+	margin-bottom: 0;
 	}
 }
 
@@ -718,6 +739,29 @@ h3
 
 	.txt_article_2 h3{
 		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	aside{
+		margin-left: 25px;
+		margin-right: 40px;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-bottom: 0;
+	}
+
+	.article_2{
+		margin-bottom: 30px;
+	}
+
+	aside img{
+		height: 175px;
+		width: 150px;
+	}
+
+	.article_2{
+		height: 175px;
 	}
 
 }
