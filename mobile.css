@@ -231,11 +231,20 @@ i.fas.fa-search
 	font-size: 1.3em;
 }
 
+@media only screen and (min-width: 700px){
+	.champ_de_recherche{
+		margin-bottom: 30px;
+	}
+
+	.info_text{
+		margin-bottom: 30px;
+	}
+}
+
 @media only screen and (min-width: 300px) and (max-width: 767px){
 	.search2{
 		display: none;
 	}
-
 }
 
 @media only screen and (min-width: 768px){
@@ -386,6 +395,9 @@ i.fas.fa-search
 
 	.titre_filtres{
 		margin-right: 30px;
+	}
+	.info_text{
+		margin-bottom: 35px;
 	}
 }
 
@@ -764,6 +776,10 @@ h3
 		height: 175px;
 	}
 
+	.notation_2{
+		margin-top: 67px;
+	}
+
 }
 
 
@@ -775,11 +791,6 @@ h5 /*La partie contenant le module LES ACTIVITES*/
 
 .module_2
 {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
-	height: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -867,8 +878,6 @@ h6
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
-		width: 100%;
-		height: auto;
 	}
 
 	.module_2 img{	
@@ -905,14 +914,6 @@ h6
 
 	.double_carte{
 		justify-content: space-between;
-	}
-
-	.champ_de_recherche{
-		margin-bottom: 30px;
-	}
-
-	.info_text{
-		margin-bottom: 30px;
 	}
 }
 
@@ -958,6 +959,33 @@ h6
 		padding-left: 5px;
 		margin: 22px;
 		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	.module_2{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.carte{
+		width: 300px;
+	}
+
+	.carte_large{
+		width: 300px;
+		height: 445px;
+	}
+
+	.carte img{
+		width: 300px;
+	}
+
+	.carte_large img{
+		width: 300px;
+		height: 390px;
 	}
 }
 
@@ -1025,5 +1053,19 @@ footer span
 	}
 		.encart{
 		margin-right: 180px;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	footer{
+			padding-left: 40px;
+	}
+	.encart{
+		margin-right: 240px;
+	}
+	
+	h5{
+		margin-top: 50px;
+		margin-bottom: 30px;
 	}
 }
