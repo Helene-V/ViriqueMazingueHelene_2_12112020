@@ -14,6 +14,6 @@ Les contraintes techniques :
 Le bleu #0065FC, le bleu clair  #DEEBFF ainsi que  le gris pour le fond #F2F2F2.
 La police à utiliser est “Raleway”.
 
-GitHub Pages : https://helene-v.github.io/Viriquehelene_2_12112020/index-mobile.html
+GitHub Pages : https://helene-v.github.io/ViriqueMazingueHelene_2_12112020/index-mobile.html
 
 Parcours Développeur Web - OpenClassRooms
